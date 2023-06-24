@@ -1,94 +1,52 @@
-Django Blog Project
+The Little Lemon website will consist of five pages:
 
-This is a Django-based blog project that allows users to create, view, edit, and delete blog posts. It includes features such as user authentication, pagination, and comment functionality.
+Home
 
-Installation
+About
 
-Clone the repository:
+Booking
 
+Menu
 
-     https://github.com/ho3a11/blog.git
-   
-Navigate to the project directory:
+Menu Item
 
+To complete this graded assessment, you will need to modify the following files:
 
-     cd blog
-   
-Create a virtual environment:
+settings.py
 
-     python3 -m venv venv
-   
-Activate the virtual environment:
-For macOS/Linux:
+urls.py (app-level)
 
+models.py
 
-     source venv/bin/activate
-For Windows:
+views.py
 
+admin.py
 
-     .\venv\Scripts\activate
-Install the project dependencies:
+templates/menu.html
 
+templates/menu_item.html
 
-     pip install -r requirements.txt
-Apply the database migrations:
+templates/partials/_footer.html
 
 
-     python manage.py migrate
-Create a superuser (admin) account:
+Supporting files
 
+Additionally, it's important to know that the following files already consists some of the code added in support of your work:
 
-     python manage.py createsuperuser
-Start the development server:
+views.py
 
+urls.py (project-level)
 
-     python manage.py runserver
-Open your web browser and navigate to http://localhost:8000 to access the blog.
+urls.py (app-level)
 
-Docker
+forms.py
 
-Alternatively, you can use Docker to run the project in a containerized environment. Follow these steps:
+models.py
 
-Install Docker on your machine by following the instructions in the official Docker documentation.
+templates/about.html
 
-Build the Docker image:
+templates/index.html
 
+templates/book.html
 
-
-     docker-compose build  
-Run the Docker container:
-
-
-
-     docker-compose up
-     
-Open your web browser and navigate to http://localhost:8000 to access the blog.
-
-Usage
-To create a new blog post, click on the "New Post" button on the homepage and fill in the required details.
-
-To view a blog post, click on its title on the homepage or in the post list.
-
-To edit a blog post, click on the "Edit" button on the post detail page and make the desired changes.
-
-To delete a blog post, click on the "Delete" button on the post detail page and confirm the deletion.
-
-To add comments to a blog post, scroll to the bottom of the post detail page and enter your comment in the provided form.
-
-Configuration
-
-The project settings can be found in the settings.py file. You can modify settings such as the database configuration, static files, and email settings according to your needs.
-
-Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-License
-
-This project is licensed under the MIT License.
-
-Acknowledgements
-
-The project uses the Django framework and various Django packages for its functionality.
-
-Feel free to customize this README file based on your specific project requirements and add any additional sections or information that you find relevant.
+templates/partials/_footer.html
