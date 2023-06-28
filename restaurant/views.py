@@ -1,6 +1,8 @@
 from django.shortcuts import render,redirect
 from . models import Booking,Menu
 from . forms import BookingForm
+from rest_framework import generics
+from .serializers import BookingSerializer
 
 # Create your views here.
 
@@ -30,5 +32,15 @@ def menu_detail(request,pk=None):
     menu_item = Menu.objects.get(id=pk)
     context = {'menu_item':menu_item}
     return render(request, 'menu_item.html', context=context)
+
+
+
+
+class BookingList(generics.ListCreateAPIView):
+    queryset = Booking.objects.all()
+    serializer_class = BookingSerializer
+
+class Registration(generics.CreateAPIView):
+    serializer_class = RegistrationSerializer
 
 

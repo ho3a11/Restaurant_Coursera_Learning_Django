@@ -92,3 +92,12 @@ Acknowledgements
 The project uses the Django framework and various Django packages for its functionality.
 
 Feel free to customize this README file based on your specific project requirements and add any additional sections or information that you find relevant.
+
+
+API paths that you want your peers to test :
+/api/bookings/
+/api/registration/
+
+
+
+https://www.coursera.org/
