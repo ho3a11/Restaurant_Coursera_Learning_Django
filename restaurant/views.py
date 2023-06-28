@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from . models import Booking,Menu
 from . forms import BookingForm
 from rest_framework import generics
-from .serializers import BookingSerializer
+from .serializers import BookingSerializer,RegistrationSerializer
 
 # Create your views here.
 
