@@ -1,38 +1,55 @@
-Django Blog Project
+The Little Lemon website will consist of five pages:
 
-This is a Django-based blog project that allows users to create, view, edit, and delete blog posts. It includes features such as user authentication, pagination, and comment functionality.
+Home
 
-Installation
+About
 
-Clone the repository:
+Booking
+
+Menu
+
+Menu Item
+
+To complete this graded assessment, you will need to modify the following files:
+
+settings.py
+
+urls.py (app-level)
+
+models.py
+
+views.py
+
+admin.py
+
+templates/menu.html
+
+templates/menu_item.html
+
+templates/partials/_footer.html
 
 
-     https://github.com/ho3a11/blog.git
-   
-Navigate to the project directory:
+Supporting files
 
+Additionally, it's important to know that the following files already consists some of the code added in support of your work:
 
-     cd blog
-   
-Create a virtual environment:
+views.py
 
-     python3 -m venv venv
-   
-Activate the virtual environment:
-For macOS/Linux:
+urls.py (project-level)
 
+urls.py (app-level)
 
-     source venv/bin/activate
-For Windows:
+forms.py
 
+models.py
 
-     .\venv\Scripts\activate
-Install the project dependencies:
+templates/about.html
 
+templates/index.html
 
-     pip install -r requirements.txt
-Apply the database migrations:
+templates/book.html
 
+<<<<<<< HEAD
 
      python manage.py migrate
 Create a superuser (admin) account:
@@ -93,11 +110,4 @@ The project uses the Django framework and various Django packages for its functi
 
 Feel free to customize this README file based on your specific project requirements and add any additional sections or information that you find relevant.
 
-
-API paths that you want your peers to test :
-/api/bookings/
-/api/registration/
-
-
-
-https://www.coursera.org/
+templates/partials/_footer.html
